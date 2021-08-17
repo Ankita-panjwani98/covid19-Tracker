@@ -1,0 +1,25 @@
+.status {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.lastupdate{
+    font-size: 1.1rem;
+}
+.date {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1rem;
+}
+#demo {
+  width: 240px;
+}
+
+.site-card-border-less-wrapper {
+  padding: 30px;
+}

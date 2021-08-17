@@ -1,0 +1,11 @@
+.countryPickerContainer {
+    margin-top: 10px;
+    display: flex;
+ justify-content: center;
+
+}
+.countryPicker {
+  width: 500px;
+  /* border: 1px solid pink; */
+  margin-bottom: 50px;
+}
