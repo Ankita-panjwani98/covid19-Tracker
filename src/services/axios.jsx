@@ -35,6 +35,7 @@ export const getDailyCovidData = async () => {
   // console.log("data", res.data);
   const modifiedData = res.data.map((dailyData) => ({
     confirmed: dailyData.confirmed.total,
+    recovered: dailyData.recovered.total,
     deaths: dailyData.deaths.total,
     date: dailyData.reportDate,
   }));

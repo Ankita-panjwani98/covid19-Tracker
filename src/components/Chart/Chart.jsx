@@ -21,6 +21,8 @@ function Chart(props) {
       }
     })();
   }, []);
+
+console.log("confirmed cases", dailyCovidData?.map((item)=> item.confirmed));
   return (
     <div>
       {selectedCountry === "" ? (
@@ -33,6 +35,20 @@ function Chart(props) {
                   data: dailyCovidData.map(({ confirmed }) => confirmed),
                   label: "Infected",
                   borderColor: "#3333ff",
+                  fill: true,
+                },
+                {
+                  data: dailyCovidData.map(({ recovered }) => recovered),
+                  label: "Deaths",
+                  borderColor: "red",
+                  backgroundColor: "rgba(255,0,0,0.5)",
+                  fill: true,
+                },
+                {
+                  data: dailyCovidData.map(({ deaths }) => deaths),
+                  label: "Recovered",
+                  borderColor: "green",
+                  backgroundColor: "rgba(0,128,0,0.5)",
                   fill: true,
                 },
                 {
